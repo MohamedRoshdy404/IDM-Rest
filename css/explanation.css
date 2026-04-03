@@ -1,0 +1,99 @@
+/* Explanation Section Styles */
+.explanation {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.explanation .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.explanation-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.text-part {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-part h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-part p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.image-part {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.image-part img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-part img:hover {
+  transform: scale(1.02);
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.lightbox-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .explanation-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-part h2 {
+    font-size: 2rem;
+  }
+
+  .text-part p {
+    font-size: 1rem;
+  }
+}
