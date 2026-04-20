@@ -51,3 +51,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+
+async function loadKey() {
+  try {
+    const response = await fetch("http://restidm.runasp.net/api/GetKeys/NewKey"); // حط رابط API هنا
+
+    // لأن الرد Text مش JSON
+    const key = await response.text();
+
+    // حط المفتاح في الصفحة
+    document.getElementById("keyCode").textContent = key;
+
+    // زر النسخ
+    document.getElementById("copyBtn").onclick = function () {
+      navigator.clipboard.writeText(key);
+      alert("تم نسخ المفتاح");
+    };
+
+  } catch (error) {
+    console.error("Error loading key:", error);
+    document.getElementById("keyCode").textContent = "حصل خطأ في تحميل المفتاح";
+  }
+}
+
+// تشغيل بعد تحميل الصفحة
+document.addEventListener("DOMContentLoaded", loadKey);
