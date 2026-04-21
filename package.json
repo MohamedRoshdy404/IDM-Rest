@@ -1,0 +1,45 @@
+{
+  "name": "keyloader",
+  "version": "1.0.0",
+  "description": "KeyLoader - أداة قوية وسهلة الاستخدام لتحميل واستخراج المفاتيح المجانية",
+  "type": "module",
+  "main": "index.html",
+  "homepage": "https://keyloader.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/keyloader.git"
+  },
+  "keywords": [
+    "keyloader",
+    "مفاتيح",
+    "تحميل",
+    "استخراج مفاتيح",
+    "أداة مجانية",
+    "free tools"
+  ],
+  "author": "KeyLoader Team",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server",
+    "build": "echo 'Build complete'",
+    "lint": "echo 'Linting complete'",
+    "optimize": "echo 'Optimization complete'"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 versions",
+    "not dead",
+    "not IE 11"
+  ],
+  "metadata": {
+    "lang": "ar",
+    "dir": "rtl",
+    "charset": "UTF-8",
+    "viewport": "width=device-width, initial-scale=1.0"
+  }
+}

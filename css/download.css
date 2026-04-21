@@ -9,11 +9,13 @@
 .download h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .download p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .download-btn {
@@ -21,41 +23,98 @@
   color: #667eea;
   padding: 1rem 2rem;
   border-radius: 50px;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   display: inline-block;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   margin-bottom: 1rem;
+  border: 2px solid white;
 }
 
 .download-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+}
+
+.download-btn:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.download-btn i {
+  margin-left: 0.5rem;
 }
 
 .version {
-  font-size: 0.9rem;
-  opacity: 0.8;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-top: 1rem;
 }
 
 /* Image Section */
 .image-section {
   width: 100%;
-  padding: 20px;
+  padding: 30px 20px;
   background-color: #f9f9f9;
   overflow: hidden;
 }
 
 .image-section img {
   width: 100%;
+  max-width: 1200px;
   height: auto;
   display: block;
+  margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-section img:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .download {
+    padding: 3rem 1.5rem;
+  }
+
+  .download h2 {
+    font-size: 2rem;
+  }
+
+  .download p {
+    font-size: 1rem;
+  }
+
+  .download-btn {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .image-section {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .download {
+    padding: 2rem 1rem;
+  }
+
+  .download h2 {
+    font-size: 1.5rem;
+  }
+
+  .download-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .version {
+    font-size: 0.85rem;
+  }
 }
 }

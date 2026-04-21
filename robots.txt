@@ -1,0 +1,29 @@
+# KeyLoader robots.txt file
+# Allows all search engine crawlers
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Specific rules for other crawlers
+User-agent: *
+Request-rate: 1/10s
+
+# Sitemap location
+Sitemap: https://keyloader.com/sitemap.xml
+
+# Additional sitemaps if needed
+# Sitemap: https://keyloader.com/sitemap-pages.xml

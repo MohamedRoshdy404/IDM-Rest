@@ -1,0 +1,73 @@
+{
+  "name": "KeyLoader - اسحب مفاتيح الوصول المجانية",
+  "short_name": "KeyLoader",
+  "description": "أداة قوية وسهلة الاستخدام لتحميل واستخراج مفاتيح الوصول. احصل على مفاتيح فعالة ومضمونة بنسبة 100%",
+  "version": "1.0.0",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#667eea",
+  "lang": "ar",
+  "dir": "rtl",
+  "screenshots": [
+    {
+      "src": "/images/download_3643774.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/download_3643774.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/images/download_3643774.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/download_3643774.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "المفاتيح المتاحة",
+      "short_name": "المفاتيح",
+      "description": "انتقل مباشرة إلى المفاتيح المتاحة",
+      "url": "/keys.html",
+      "icons": [
+        {
+          "src": "/images/download_3643774.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "تحميل البرنامج",
+      "short_name": "تحميل",
+      "description": "انتقل مباشرة لصفحة التحميل",
+      "url": "/download.html",
+      "icons": [
+        {
+          "src": "/images/download_3643774.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "screenshots_rtl": true,
+  "prefer_related_applications": false
+}

@@ -4,53 +4,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>برنامجي - التحميل</title>
-  <link rel="icon" href="/images/download_3643774.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="تحميل KeyLoader - احصل على أحدث إصدار من برنامج استخراج المفاتيح المجاني. تحميل آمن وسريع.">
+  <meta name="keywords" content="تحميل, KeyLoader, برنامج مجاني, استخراج مفاتيح">
+  <meta name="author" content="KeyLoader Team">
+  <meta name="theme-color" content="#667eea">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KeyLoader - تحميل البرنامج">
+  <meta property="og:description" content="احصل على أحدث إصدار من KeyLoader - برنامج استخراج المفاتيح المجاني">
+  <meta property="og:image" content="./images/download_3643774.png">
+  <meta property="og:url" content="https://keyloader.com/download.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="KeyLoader - تحميل البرنامج">
+  <meta name="twitter:description" content="احصل على أحدث إصدار من KeyLoader مجاناً">
+
+  <!-- Links -->
+  <link rel="canonical" href="https://keyloader.com/download.html">
+  <link rel="icon" href="./images/download_3643774.png" type="image/png">
+  <link rel="apple-touch-icon" href="./images/download_3643774.png">
+  <link rel="manifest" href="./manifest.json">
+
+  <!-- Preconnect & DNS Prefetch -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-/jR5WQrCM7i/J2lfYkaHxUjV84NQiiGBmembtTIVb29ZkhtHh6dFvlZKEiscinlYv6BTlv4+kellSB+jjw"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/download.css">
   <link rel="stylesheet" href="css/footer.css">
+
+  <title>KeyLoader - تحميل | احصل على البرنامج الآن</title>
 </head>
 
 <body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main" class="skip-link">انتقل للمحتوى الرئيسي</a>
+
   <!-- Navigation -->
-  <nav>
+  <nav role="navigation" aria-label="التنقل الرئيسي">
     <div class="container">
-      <div class="logo">
-        <i class="fas fa-key"></i> برنامجي
+      <div class="logo" aria-label="KeyLoader">
+        <i class="fas fa-key" aria-hidden="true"></i> KeyLoader
       </div>
-      <ul>
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="keys.html">المفاتيح المتاحة</a></li>
-        <li><a href="download.html">التحميل</a></li>
+      <ul role="menubar">
+        <li role="none"><a href="index.html" role="menuitem">الرئيسية</a></li>
+        <li role="none"><a href="keys.html" role="menuitem">المفاتيح المتاحة</a></li>
+        <li role="none"><a href="download.html" role="menuitem" aria-current="page">التحميل</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Download Section -->
-  <section class="download">
-    <div class="container">
-      <h2>تحميل البرنامج</h2>
-      <p>احصل على أحدث إصدار من البرنامج الآن</p>
-      <a href="/ProgramEXE/RestIDM.rar" class="btn download-btn"><i class="fas fa-download"></i> تحميل الآن</a>
-      <p class="version">الإصدار: 1.0.0 | آخر تحديث: 2026</p>
-    </div>
-  </section>
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Download Section -->
+    <section class="download" aria-labelledby="download-title">
+      <div class="container">
+        <h2 id="download-title">تحميل البرنامج</h2>
+        <p>احصل على أحدث إصدار من البرنامج الآن</p>
+        <a href="/ProgramEXE/RestIDM.rar" class="btn download-btn" aria-label="تحميل برنامج KeyLoader الإصدار 1.0.0"><i
+            class="fas fa-download" aria-hidden="true"></i> تحميل الآن</a>
+        <p class="version">الإصدار: 1.0.0 | آخر تحديث: 2026</p>
+      </div>
+    </section>
 
-  <!-- Image Section -->
-  <section class="image-section">
-    <img src="images/IMG-PROGRAM.webp" alt="صورة توضيحية للبرنامج">
-  </section>
+    <!-- Image Section -->
+    <section class="image-section">
+      <img src="images/IMG-PROGRAM.webp" alt="صورة توضيحية لبرنامج KeyLoader" loading="lazy" decoding="async">
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer>
+  <footer role="contentinfo" aria-label="تذييل الصفحة">
     <div class="footer-content">
       <p>&copy; <span id="current-year"></span> جميع الحقوق محفوظة. تم التطوير بكل حب ❤️</p>
+      <p>KeyLoader - جميع الحقوق محفوظة © 2026</p>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "KeyLoader",
+    "description": "برنامج استخراج المفاتيح",
+    "url": "https://keyloader.com",
+    "downloadUrl": "https://keyloader.com/ProgramEXE/RestIDM.rar",
+    "softwareVersion": "1.0.0",
+    "applicationCategory": "DesktopApplication"
+  }
+  </script>
+
+  <script defer src="js/script.js"></script>
 </body>
 
 </html>

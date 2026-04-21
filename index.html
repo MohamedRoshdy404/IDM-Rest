@@ -4,58 +4,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./images/download_3643774.png">
-  <meta name="description" content="برنامج التنزيل">
-  <title>برنامجي - الرئيسية</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="KeyLoader - أداة قوية وسهلة الاستخدام لتحميل واستخراج المفاتيح. احصل على مفاتيح وصول فورية الآن!">
+  <meta name="keywords" content="KeyLoader, مفاتيح, تحميل, استخراج مفاتيح, أدوات مجانية">
+  <meta name="author" content="KeyLoader Team">
+  <meta name="theme-color" content="#667eea">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KeyLoader - احصل على مفاتيح الوصول الآن">
+  <meta property="og:description" content="أداة قوية وسهلة الاستخدام لتحميل واستخراج المفاتيح. تجربة مجانية 100%">
+  <meta property="og:image" content="./images/download_3643774.png">
+  <meta property="og:url" content="https://keyloader.com/">
+  <meta property="og:site_name" content="KeyLoader">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KeyLoader - احصل على مفاتيح الوصول الآن">
+  <meta name="twitter:description" content="أداة قوية وسهلة الاستخدام لتحميل واستخراج المفاتيح">
+  <meta name="twitter:image" content="./images/download_3643774.png">
+
+  <!-- Links -->
+  <link rel="canonical" href="https://keyloader.com/">
+  <link rel="icon" href="./images/download_3643774.png" type="image/png">
+  <link rel="apple-touch-icon" href="./images/download_3643774.png">
+  <link rel="manifest" href="./manifest.json">
+
+  <!-- Preconnect & DNS Prefetch -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-/jR5WQrCM7i/J2lfYkaHxUjV84NQiiGBmembtTIVb29ZkhtHh6dFvlZKEiscinlYv6BTlv4+kellSB+jjw"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/styles.min.css">
+
+  <title>KeyLoader - الرئيسية | احصل على مفاتيح الوصول الآن</title>
 </head>
 
 <body>
+
+
   <!-- Navigation -->
-  <nav>
+  <nav role="navigation" aria-label="التنقل الرئيسي">
     <div class="container">
-      <div class="logo">
-        <i class="fas fa-key"></i> برنامجي
+      <div class="logo" aria-label="KeyLoader">
+        <i class="fas fa-key" aria-hidden="true"></i> KeyLoader
       </div>
-      <ul>
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="keys.html">المفاتيح المتاحة</a></li>
-        <li><a href="download.html">التحميل</a></li>
+      <ul role="menubar">
+        <li role="none"><a href="index.html" role="menuitem" aria-current="page">الرئيسية</a></li>
+        <li role="none"><a href="keys.html" role="menuitem">المفاتيح المتاحة</a></li>
+        <li role="none"><a href="download.html" role="menuitem">التحميل</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero" id="home">
-    <h1>مرحباً ببرنامجي</h1>
+  <section class="hero" id="home" role="banner">
+    <h1>مرحباً ب KeyLoader</h1>
     <p>أداة قوية وسهلة الاستخدام لتحقيق أهدافك. احصل على مفاتيح الوصول الآن!</p>
-    <a href="download.html" class="btn">تحميل البرنامج</a>
+    <a href="download.html" class="btn" aria-label="انتقل لصفحة تحميل البرنامج">تحميل البرنامج</a>
   </section>
 
-  <!-- Explanation Section -->
-  <section class="explanation">
-    <div class="container">
-      <div class="explanation-content">
-        <div class="text-part">
-          <h2>شرح سريع للبرنامج</h2>
-          <p>أداة إعادة الفترة التجريبية لبرنامج Internet Download Manager</p>
-        </div>
-        <div class="image-part">
-          <img id="explanation-image" src="images/IMG-PROGRAM.webp" alt="صورة البرنامج" style="cursor: zoom-in;" loading="lazy" />
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Explanation Section -->
+    <section class="explanation" aria-labelledby="explain-title">
+      <div class="container">
+        <div class="explanation-content">
+          <div class="text-part">
+            <h2 id="explain-title">شرح سريع للبرنامج</h2>
+            <p>أداة إعادة الفترة التجريبية لبرنامج Internet Download Manager</p>
+          </div>
+          <div class="image-part">
+            <img id="explanation-image" src="images/IMG-PROGRAM.webp" alt="صورة توضيحية لبرنامج KeyLoader"
+              loading="lazy" decoding="async" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer>
+  <footer role="contentinfo" aria-label="تذييل الصفحة">
     <div class="footer-content">
       <p>&copy; <span id="current-year"></span> جميع الحقوق محفوظة. تم التطوير بكل حب ❤️</p>
+      <p>KeyLoader - جميع الحقوق محفوظة © 2026</p>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "KeyLoader",
+    "description": "أداة قوية وسهلة الاستخدام لتحميل واستخراج المفاتيح",
+    "url": "https://keyloader.com",
+    "applicationCategory": "DesktopApplication",
+    "image": "./images/download_3643774.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <!-- Performance: Preload critical resources -->
+  <script defer src="js/script.js"></script>
 </body>
 
 </html>
